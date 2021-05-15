@@ -13,6 +13,6 @@ export const GlobalStyles = createGlobalStyle`
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
 
-        transition: all 0.5s linear;
+        transition: all 0.3s linear;
     }
 `
