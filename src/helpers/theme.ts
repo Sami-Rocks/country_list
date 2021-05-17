@@ -1,11 +1,11 @@
-export const lightTheme: any = {
+export const light: any = {
     body: '#FFFFFF',
     text: '#131416',
     toggleBorder: '#fff',
     background: '#FAFAFA'
 }
 
-export const darkTheme: any = {
+export const dark: any = {
     body: '#2B3743',
     text: '#fafafa',
     toggleBorder: '#6b8096',

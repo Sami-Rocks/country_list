@@ -1,10 +1,11 @@
 import './App.scss';
 import { ThemeContext, ThemeProvider } from 'styled-components'
 import { GlobalStyles } from "../../helpers/globalStyles"
-import { darkTheme, lightTheme } from '../../helpers/theme';
-import { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
+import { ThemeStore } from '../../components/ThemeStore';
+import Theme from '../../components/Theme/theme';
 
 const  App = () => {
 
@@ -16,28 +17,19 @@ const  App = () => {
     .then((result)=>{setCountries(result)})
   }, [])
 
-const [theme, setTheme] = useState('light');
-
-const toggleTheme = () => {
-  theme === 'light' ? setTheme('dark') : setTheme('light')
-}
-
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyles/>
+  <ThemeStore>
+    <Theme>
         <div className="App">
-          <header>
-            <div className="title">Where in the world?</div>
-            <div > <button  className="theme-switcher"
-            onClick={toggleTheme}>Dark Mode</button></div>
-        </header>
-          <div className="cards">
-            {countries.map((country, index)=>(
-              <Card key={index} countries={country} />
-            ))}
+            <Header/>
+            <div className="cards">
+              {countries.map((country, index)=>(
+                <Card key={index} countries={country} />
+              ))}
+            </div>
           </div>
-        </div>
-    </ThemeProvider>
+    </Theme>
+  </ThemeStore>
   );
 }
 
