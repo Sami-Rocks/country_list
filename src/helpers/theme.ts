@@ -1,13 +1,17 @@
 export const lightTheme: any = {
     body: '#FFFFFF',
     text: '#131416',
-    toggleBorder: '#fff',
-    background: '#FAFAFA'
+    background: '#FAFAFA',
+    headerBackground: 'FFFFFF',
+    cardBackground: ''
 }
 
 export const darkTheme: any = {
     body: '#2B3743',
     text: '#fafafa',
-    toggleBorder: '#6b8096',
-    background: '#202D36'
+    background: '#121212',
+    headerBackground: '#272727',
+    cardBackground: '#1E1E1E',
 }
+
+//e43f5a    1f4068
