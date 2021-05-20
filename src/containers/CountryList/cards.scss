@@ -4,7 +4,15 @@
   margin: 0 auto;
   justify-content: center;
   min-width: 80%;
-  padding: 10%;
-  padding-top: 6rem;
+  padding: 1rem 10%;
   gap: 1rem 2rem;
+}
+
+.options {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-width: 80%;
+  padding: 0 10%;
+  padding-top: 7rem;
 }

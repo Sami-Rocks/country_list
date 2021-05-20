@@ -5,7 +5,7 @@ import { GlobalStyles } from "../../helpers/globalStyles"
 import Header from '../../components/Header';
 import { lightTheme, darkTheme } from '../../helpers/theme'
 import { ThemeContext } from '../../helpers/themeContext'
-import CountryList from './../CountryList'
+import CountryList from '../CountryList'
 
 const  App = () => {
 

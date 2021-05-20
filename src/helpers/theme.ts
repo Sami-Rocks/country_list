@@ -2,7 +2,7 @@ export const lightTheme: any = {
     body: '#FFFFFF',
     text: '#131416',
     background: '#FAFAFA',
-    headerBackground: 'FFFFFF',
+    headerBackground: '#FFFFFF',
     cardBackground: ''
 }
 
